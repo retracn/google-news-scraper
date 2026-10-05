@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "google-news-scraper": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server",
+        "--tools",
+        "automationnation/google-news-scraper"
+      ],
+      "env": {
+        "APIFY_TOKEN": "YOUR_APIFY_TOKEN"
+      }
+    }
+  }
+}

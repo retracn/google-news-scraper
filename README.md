@@ -11,6 +11,7 @@ Google News Scraper is an Apify Actor that returns Google News results for any t
 - One row per article: headline, snippet, source, publish time (ISO) and the publisher's article URL.
 - Time filters: past hour, day, week, month or year; sort by relevance or date.
 - Any country and language, up to 300 articles per search.
+- Monitoring: with Only new results on, a scheduled run returns only articles earlier runs didn't (a Google Alerts feed you can use in code). Guide: https://retracn.github.io/automationnation-actors/guides/google-alerts-api/
 - Price: $1 per 1,000 articles; the free $5 monthly credit covers 5,000 articles.
 
 ## Example input
@@ -107,6 +108,9 @@ No. Google retired the Google News API years ago. Google News Scraper on Apify r
 
 **Do I get the full article text?**
 You get the headline, snippet, source, date and URL; pass the URLs to a content crawler for full text.
+
+**Is there a Google Alerts API?**
+No. Google Alerts arrive by email or RSS only. Schedule this Actor with Only new results on to get each new article about your query as JSON, Slack, Sheets or a webhook.
 
 ## More from AutomationNation
 
